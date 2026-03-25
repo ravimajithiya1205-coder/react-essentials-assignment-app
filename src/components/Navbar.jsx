@@ -6,7 +6,7 @@ const Navbar = ({ dark, setDark, setPage }) => {
     <nav className="navbar navbar-expand-lg px-4 py-3 w-100"
       style={{
         background: dark
-          ? "linear-gradient(90deg, #000000, #434343)"
+          ? "linear-gradient(90deg, #5a5a5a, #000000)"
           : "linear-gradient(90deg, #141e30, #243b55)",
       }}
     >

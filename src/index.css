@@ -32,6 +32,15 @@ body {
 .btn {
   transition: 0.3s;
 }
+
 .btn:hover {
   transform: scale(1.05);
+}
+
+.btn-outline-dark.btntxt-hover-dark:hover{
+  color: #fff !important;
+}
+
+.btn-outline-light.btntxt-hover-dark:hover{
+  color: #000 !important;
 }

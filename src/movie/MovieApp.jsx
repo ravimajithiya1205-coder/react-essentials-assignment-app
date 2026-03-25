@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard";
 const API_KEY = import.meta.env.VITE_TMDB_KEY;
 
 
-const MovieApp = () => {
+const MovieApp = ({dark}) => {
   const [search, setSearch] = useState("");
   const [movies, setMovies] = useState([]);
   const [fav, setFav] = useState([]);
@@ -54,7 +54,7 @@ const MovieApp = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <button className="btn btn-dark" onClick={() => setSearch("")}>
+        <button className={`btn ${dark ? "btn-secondary" : "btn-dark"}`} onClick={() => setSearch("")}>
           Reset
         </button>
       </div>
@@ -62,6 +62,7 @@ const MovieApp = () => {
       <div className="row g-4">
         {movies.map(movie => (
           <MovieCard
+          dark={dark}
             key={movie.id}
             movie={movie}
             toggleFav={toggleFav}

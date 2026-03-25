@@ -41,7 +41,7 @@ function App() {
         {page === "movies" && (
           <div className="row">
             <div className="col-12">
-              <MovieApp />
+              <MovieApp dark={dark} />
             </div>
           </div>
         )}

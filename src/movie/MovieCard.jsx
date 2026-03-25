@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const MovieCard = ({ movie, toggleFav, isFav }) => {
+const MovieCard = ({ movie, toggleFav, isFav, dark }) => {
   return (
     <div className="col-md-4">
 
@@ -23,7 +23,7 @@ const MovieCard = ({ movie, toggleFav, isFav }) => {
           <h5>{movie.title}</h5>
 
           <button
-            className={`btn text-black ${isFav ? "btn-danger" : "btn-outline-light"}`}
+            className={`btn ${dark ? "btn-outline-light" : "btn-outline-dark"} ${isFav ? "btn-danger btntxt-hover-dark text-white" : ""}`}
             onClick={() => toggleFav(movie)}
           >
             {isFav ? "❤️ Remove" : "🤍 Favourite"}
