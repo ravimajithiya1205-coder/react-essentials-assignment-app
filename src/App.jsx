@@ -17,7 +17,7 @@ function App() {
   return (
     <div className={dark ? "bg-dark text-light" : "bg-light"} style={{ minHeight: "100vh" }}>
 
-      <div className="d-flex justify-content-between p-3">
+      <div className="d-flex position-sticky top-0 z-index-9 justify-content-between pb-3">
         <Navbar dark={dark} setDark={setDark} setPage={setPage} />
       </div>
 

@@ -44,3 +44,7 @@ body {
 .btn-outline-light.btntxt-hover-dark:hover{
   color: #000 !important;
 }
+
+.z-index-9{
+  z-index: 9;
+}
