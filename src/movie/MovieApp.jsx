@@ -3,6 +3,7 @@ import MovieCard from "./MovieCard";
 
 const API_KEY = import.meta.env.VITE_TMDB_KEY;
 
+
 const MovieApp = () => {
   const [search, setSearch] = useState("");
   const [movies, setMovies] = useState([]);
@@ -16,6 +17,7 @@ const MovieApp = () => {
       .then(res => res.json())
       .then(data => {
         setMovies(data.results || []);
+
       });
   }, []);
 
