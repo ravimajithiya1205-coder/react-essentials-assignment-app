@@ -23,7 +23,7 @@ const MovieCard = ({ movie, toggleFav, isFav }) => {
           <h5>{movie.title}</h5>
 
           <button
-            className={`btn ${isFav ? "btn-danger" : "btn-outline-light"}`}
+            className={`btn text-black ${isFav ? "btn-danger" : "btn-outline-light"}`}
             onClick={() => toggleFav(movie)}
           >
             {isFav ? "❤️ Remove" : "🤍 Favourite"}
